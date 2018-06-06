@@ -48,6 +48,8 @@
      margin-top:-190px;
      height:400px;
      
+    
+     
  }
  
  img {
@@ -82,18 +84,46 @@
      margin-bottom:0px;
     
     
+ }
+ 
+ 
 
+ .E{
+    
+     background-color: white;   
+     margin-top:-190px;
+     height:350px;
+     padding: 15px 20px 15px 20px;
+ }
+
+ form{
+     margin-left: -40px;
+ }
+    input{
+      width: 850px;
+ }
+
+   .Line-Height {
+     line-height: 120px;
      
  }
  
- /*
- .E{
-     border: solid;
-     background-color: white;
-     margin: 100px 200px 100px 200px;
+ 
+ 
+
+ text{
+    background-color: #4aaaa5;
+    padding: 8px 15px 8px 15px;
+    color: white;
+
+    
+    
  }
  
- 
+
+ /*
+
+
  h3{
      border-bottom: solid;
  }
@@ -106,15 +136,6 @@
      margin-left: 240px;
      
  
- 
-     
-  }
- 
-  footer1{
-     background-color: blue;
-     margin-bottom:300px;
-     
-  }
  
   .S{
       clear: left;
@@ -149,6 +170,9 @@
       right:-50px;
   }
  
+
+
+  /*
   .Zika {
       display:none;
   }
@@ -157,7 +181,7 @@
  display: none;
  }
  
- 
+ */
  
   
  

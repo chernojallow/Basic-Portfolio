@@ -15,7 +15,7 @@
 }  
 
 
- h1{
+ h1 {
     float:left;
     background-color:#4aaaa5;
     text-align: center;
@@ -25,7 +25,7 @@
     padding: 15px 15px 15px 15px;
 
  } 
- 
+
  
  .A{
      border: 2px solid grey;
@@ -128,65 +128,75 @@
  
 
 
- h3{
-     border-bottom: solid;
- }
+ 
  
   .G{
-     border: solid;
+     border: 2px solid #cccccc;
      background-color: white;
-     height: 300px;
+     height: 420px;
      width: 440px;
      margin-left: 240px;
+     padding: 40px 40px 40px 40px;
+     margin-top: -200px;
      
   }
  
-  .S{
-      clear: left;
+  .Image5{
+      position: relative;
+      bottom: -35px;
+      left: 0px;
+  }
+ .Image5 .Cascadings{
+      position: absolute;
+      top: 290px;
+      left:0px; 
+  } 
+ 
+  .Image4{
+      position: relative;
+      left: 11px;
+      bottom: -21px;
+  }
+
+  .Image4 .ComputerSC{
+      position: absolute;
+      right: 127px;
+      top: 180px;
   }
  
-  .M {
+  .Image3 {
       position: relative;
-      right: 220px;
-      bottom: -70px;
+      left: 0px;
+      bottom: -20px;
+  }
+
+  .Image3 .Javascript{
+      position: absolute;
+      left: 1px;
+      bottom: -208px;
+  }
+ 
+  .Image1 {
+      position: relative;
+    
+  }
+
+  .Image1 .Technology{
+      position: absolute;
+      top: 70px;
       
-  }
+    }
  
-  .L{
+  .Image2{
       position: relative;
-      right: 70px;
-      bottom: -70px;
+      right: -10px;
   }
- 
-  .O {
-      position: relative;
-      right: 100px;
-      bottom: -140px;
-  }
- 
-  .U {
-      position: relative;
-      right: -20px;
-  }
- 
-  .V {
-      position: relative;
-      right:-50px;
-  }
+   .Image2 .DStructure {
+       position: absolute;
+       right:127px;
+       top: 70px;
+   }
  
 
 
-  /*
-  .Zika {
-      display:none;
-  }
-  .Chea {
- 
- display: none;
- }
- 
- */
- 
-  
- 
  

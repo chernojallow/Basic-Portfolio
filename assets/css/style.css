@@ -86,8 +86,6 @@
     
  }
  
- 
-
  .E{
     
      background-color: white;   
@@ -116,12 +114,18 @@
     padding: 8px 15px 8px 15px;
     color: white;
 
-    
-    
  }
  
 
- /*
+
+
+
+
+
+
+
+
+ 
 
 
  h3{
@@ -135,7 +139,7 @@
      width: 440px;
      margin-left: 240px;
      
- 
+  }
  
   .S{
       clear: left;

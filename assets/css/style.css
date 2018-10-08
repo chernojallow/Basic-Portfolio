@@ -99,12 +99,13 @@
      
  }
  
- .Technology{
+ .Technology,.Train,.Project1,.Javascript,.Cascadings,.ComputerSC,.DStructure{
     background-color: #4aaaa5;
     padding: 8px 15px 8px 15px; 
     color: white;
-
  }
+
+
 
  button{
     background-color: #4aaaa5;
@@ -181,6 +182,28 @@
        top: 70px;
    }
  
+   .Image8{
+    position: relative;
+    right: -270px;
+    top:  140px;
+}
+ .Image8 .Train{
+     position: absolute;
+     right:750px;
+     top: 170px;
+ }
 
+ .Image9{
+    position: relative;
+    right: -350px;
+    top: -105px;
+    
+}
+ .Image9 .Project1{
+     position: absolute;
+     right:650px;
+     top: 170px;
+ }
+ 
 
  

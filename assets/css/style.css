@@ -99,11 +99,17 @@
      
  }
  
- text{
+ .Technology{
     background-color: #4aaaa5;
-    padding: 8px 15px 8px 15px;
+    padding: 8px 15px 8px 15px; 
     color: white;
 
+ }
+
+ button{
+    background-color: #4aaaa5;
+    padding: 8px 15px 8px 15px; 
+    color: white;
  }
  
 

@@ -99,7 +99,7 @@
      
  }
  
- .Technology,.Train,.Project1,.Javascript,.Cascadings,.ComputerSC,.DStructure{
+ .Technology,.Train,.Project1,.Javascript,.Cascadings,.ComputerSC,.DStructure,.Liri,.CliApp,.Friend{
     background-color: #4aaaa5;
     padding: 8px 15px 8px 15px; 
     color: white;
@@ -206,4 +206,44 @@
  }
  
 
+ 
+ .Image10{
+    position: relative;
+    right: -190px;
+    bottom: -20px;
+    
+}
+ .Image10 .Liri{
+     position: absolute;
+     right:470px;
+     top: 170px;
+ }
+ 
+
+
+ .Image11{
+    position: relative;
+    right: -30px;
+    bottom: -140px;
+    
+}
+ .Image11 .CliApp{
+     position: absolute;
+     right:280px;
+     top: 170px;
+ }
+ 
+
+
+ .Image12{
+    position: relative;
+    right: -30px;
+    top: -100px;
+    
+}
+ .Image12 .Friend{
+     position: absolute;
+     right:100px;
+     top: 170px;
+ }
  

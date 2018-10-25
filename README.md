@@ -48,6 +48,10 @@ Please submit the link to the Github Repository!
    your repo.
    
 5.Reference these screenshots for your site:
+   
+   ![alt text](assets/images/about.png)
+    ![alt text](assets/images/contact.png)
+     ![alt text](assets/images/portfolio.png)
 
 
 

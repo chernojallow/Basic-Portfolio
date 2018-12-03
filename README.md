@@ -57,7 +57,7 @@ Please submit the link to the Github Repository!
     
     # Porforlio
     
-    ![alt text](assets/images/portforlio.png)
+    ![alt text](assets/images/portfolio.png)
 
 
 

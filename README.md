@@ -50,13 +50,13 @@ Please submit the link to the Github Repository!
 5.Reference these screenshots for your site:
 
      # About
+     
    ![alt text](assets/images/about.png)
    
      #Contact
    ![alt text](assets/images/contact.png)
     
     # Porforlio
-    
     ![alt text](assets/images/portfolio.png)
 
 

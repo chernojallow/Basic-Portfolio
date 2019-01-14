@@ -1,139 +1,173 @@
+
+
+
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-	<meta charset="UTF-8">
-	<title>Cherno Jallow / Portforlio</title>
-	<link rel="stylesheet" href="./assets/css/reset.css">
-	<link rel="stylesheet" href="./assets/css/style.css">
-</head>
-
-<body>
-
-	<header>
-		<!--container-->
-		<div class="container">
-			<div class="name">
-				<div class="logo">Cherno Jallow</div>
-			</div>
-			<nav class="nav">
-				<ul>
-					<li><a href="index.html">About</a></li>
-					<li><a href="#" class="active">Portforlio</a></li>
-					<li><a href="contact.html">Contact</a></li>
-				</ul>
-			</nav>
-		</div> 
-	</header>
-
-	<div class="content">
-		<!-- Main content -->
-		<div class="main">
-			<h1 class="page-title">Portforlio</h1>
-
-			<ul class="portfolio">
-				<a href="https://github.com/chernojallow/Responsive-Portfolio" target="_blank">
-					<li class="portfolio-item">
-						<img src="./assets/images/1.jpeg" alt="responsiveness">
-						<h2 class="item-name">responsiveness
-						</h2>
-					</li>
-				</a>
-
-
-				<a href="https://github.com/chernojallow/Word-Guess-Game" target="_blank">
-					<li class="portfolio-item">
-						<img src="./assets/images/1.jpeg" alt="word-guess-game">
-						<h2 class="item-name">Word-Guess-Game
-						</h2>
-					</li>
-				</a>
-
-		
-
-				<a href="https://github.com/chernojallow/unit-4-game" target="_blank">
-					<li class="portfolio-item">
-						<img src="./assets/images/1.jpeg" alt="Jquery">
-						<h2 class="item-name"> Jquery
-						</h2>
-					</li>
-				</a>
-
-				<a href="https://github.com/chernojallow/TriviaGame" target="_blank">
-					<li class="portfolio-item">	
-							<img src="./assets/images/1.jpeg" alt="Trivia">
-							<h2 class="item-name"> TriviaGame
-							</h2>
-					</li>
-				</a>
-
-				<a href="https://github.com/chernojallow/gifTastic" target="_blank">
-					<li class="portfolio-item">
-							<img src="./assets/images/1.jpeg" alt="giftastic">
-							<h2 class="item-name"> gifTastic
-							</h2>
-					</li>
-				</a>
-
-				<a href="https://github.com/chernojallow/Train-Schedular-" target="_blank">
-					<li class="portfolio-item">
-						<img src="./assets/images/1.jpeg" alt="Train-Schedular-">
-						<h2 class="item-name">TrainSchedular
-						</h2>
-					</li>
-				</a>
-
-
-				<a href="https://github.com/chernojallow/liri-node-app" target="_blank">
-					<li class="portfolio-item">
-						<img src="./assets/images/1.jpeg" alt="LirNode">
-						<h2 class="item-name"> LiriNode
-						</h2>
-					</li>
-				</a>
-
-				<a href="https://github.com/chernojallow/Cli-App" target="blank">
-					<li class="portfolio-item">
-						<img src="./assets/images/1.jpeg" alt="CLiApp">
-						<h2 class="item-name"> CliApp
-						</h2>
-					</li>
-				</a>
-
-
-				<a href="https://github.com/chernojallow/FriendFinder" target="blank">
-					<li class="portfolio-item">
-						<img src="./assets/images/1.jpeg" alt="FriendFinder">
-						<h2 class="item-name">FriendFinder</h2>
-					</li>
-				</a>
-
-				<a href="https://github.com/shelbydix7/Project2" target="_blank">
-					<li class="portfolio-item">
-						<img src="./assets/images/1.jpeg" alt="Project2">
-						<h2 class="item-name">Project2 </h2>
-					</li>
-				</a>
-
-			</ul>
-
-		</div> <!-- .main -->
-
-		<!--sidebar-->
-		<div class="sidebar">
-			<h2 class="sidebar-title">Connect with Me</h2>
-			<ul class="social">
-				<li><a href="https://github.com/chernojallow/"><img src="./assets/images/github.jpg" alt="GitHub"></a></li>
-				<li><a href="https://www.linkedin.com/in/cherno-jallow-0218bb149/"><img src="./assets/images/linkedln.png" alt="LinkedIn"></a></li>
-				<li><a href="https://www.facebook.com/zika.chea/"><img src="./assets/images/facebook.png" alt="Facebook"></a></li>
-
-			</ul>
-		</div> 
-
-		<footer>
-			&copy; Copyright 2018 Cherno Jallow
-		</footer>
-
-</body>
-
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Portfolio :: Portfolio</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+            crossorigin="anonymous">
+        <link rel="stylesheet" href="./assets/css/style.css">
+    </head>
+    <body>
+        <header class="site-header mb-sm-3 mb-md-4">
+            <nav class="navbar navbar-expand-md navbar-light bg-#666">
+                <div class="container">
+                    <a href="#" class="navbar-brand">Cherno Jallow</a>
+                    <button class="navbar-toggler navbar-toggle-icon" type="button" data-toggle="collapse" data-target="#navMain"
+                        aria-controls="navMain" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div id="navMain" class="collapse navbar-collapse">
+                        <ul class="navbar-nav ml-auto">
+                            <li class="nav-item"><a href="home.html" class="nav-link">Home</a></li>
+                            <li class="nav-item"><a href="index.html" class="nav-link">About</a></li>
+                            <li class="nav-item active"><a href="portfolio.html" class="nav-link">Portfolio</a></li>
+                            <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <div class="site-content container">
+            <div class="row">
+                <div id="main" class="col-sm site-main bg-white p-4">
+                    <article class="article">
+                        <header class="article__header mb-4 pb-2 border-bottom">
+                            <h1 class="article__title">Portfolio</h1>
+                        </header><!-- .article__header -->
+                        <section class="row portfolio">
+                            <a class="portfolio__link col-md-auto mb-4 mb-sm-5" title="Click to learn more" target="_blank" href="https://github.com/chernojallow/Word-Guess-Game">
+                                <figure class="portfolio__item">
+                                    <picture class="portfolio__image">
+                                        <source srcset="./assets/images/gameshot.png" media="(min-width: 992px)">
+                                        <source srcset="./assets/images/gamehot1.png" media="(min-width: 768px)">
+                                        <img class="img-fluid" src="./assets/images/gameshot2.png"  alt="word-guess-game">
+                                    </picture>
+                                    <figcaption class="portfolio__title py-2 h5 m-0 position-relative font-weight-normal text-white text-center">Word-Guess-Game</figcaption>
+                                </figure><!-- portfolio__item -->
+                            </a><!-- portfolio__link -->
+                            <a class="portfolio__link col-md-auto mb-4 mb-sm-5" title="Click to learn more" target ="blank" href="https://github.com/chernojallow/unit-4-game">
+                                <figure class="portfolio__item">
+                                    <picture class="portfolio__image">
+                                        <source srcset="./assets/images/crystalscreen1.png" media="(min-width: 792px)">
+                                        <source srcset="./assets/images/crystalscreen2.png" media="(min-width: 768px)">
+                                        <img class="img-fluid" src="./assets/images/crystalscreen3.png" alt="Crystal collector">
+                                    </picture>
+                                    <figcaption class="portfolio__title py-2 h5 m-0 position-relative font-weight-normal text-white text-center">Crystal Collector</figcaption>
+                                </figure><!-- portfolio__item -->
+                            </a><!-- portfolio__link -->
+                            <a class="portfolio__link col-md-auto mb-4 mb-sm-5" title="Click to learn more" target ="blank" href="https://github.com/chernojallow/Train-Schedular-">
+                                <figure class="portfolio__item">
+                                    <picture class="portfolio__image">
+                                        <source srcset="./assets/images/trainshot.png" media="(min-width: 992px)">
+                                        <source srcset="./assets/images/trainshot2.png"   media="(min-width: 768px)">
+                                        <img class="img-fluid" src="./assets/images/trainshot3.png" alt="Train-Schedular">
+                                    </picture>
+                                    <figcaption class="portfolio__title py-2 h5 m-0 position-relative font-weight-normal text-white text-center">Train Schedular</figcaption>
+                                </figure><!-- portfolio__item -->
+                            </a><!-- portfolio__link -->
+                            <a class="portfolio__link col-md-auto mb-4 mb-sm-5" title="Click to learn more" target ="blank" href="https://github.com/chernojallow/Cli-App">
+                                <figure class="portfolio__item">
+                                    <picture class="portfolio__image">
+                                        <source srcset="./assets/images/bamazon1.png" media="(min-width: 992px)">
+                                        <source srcset="./assets/images/bamazon2.png" media="(min-width: 768px)">
+                                        <img class="img-fluid" src="./assets/images/bamazon3.png" alt="Bamazon Customer">
+                                    </picture>
+                                    <figcaption class="portfolio__title py-2 h5 m-0 position-relative font-weight-normal text-white text-center">Bamazon Customer</figcaption>
+                                </figure><!-- portfolio__item -->
+                            </a><!-- portfolio__link -->
+                            <a class="portfolio__link col-md-auto mb-4 mb-sm-5" title="Click to learn more"  target ="blank" href="https://github.com/chernojallow/liri-node-app">
+                                <figure class="portfolio__item">
+                                    <picture class="portfolio__image">
+                                        <source srcset="./assets/images/screen1.png" media="(min-width: 992px)">
+                                        <source srcset="./assets/images/screen2.png" media="(min-width: 768px)">
+                                        <img class="img-fluid" src="./assets/images/screen3.png" alt="LIRI Bot">
+                                    </picture>
+                                    <figcaption class="portfolio__title py-2 h5 m-0 position-relative font-weight-normal text-white text-center">LIRI Bot</figcaption>
+                                </figure><!-- portfolio__item -->
+                            </a><!-- portfolio__link -->
+                            <a class="portfolio__link col-md-auto mb-4 mb-sm-5" title="Click to learn more" target ="blank" href="https://github.com/chernojallow/FriendFinder" target ="blank">
+                                <figure class="portfolio__item">
+                                    <picture class="portfolio__image">
+                                        <source srcset="./assets/images/fFinder.png" media="(min-width: 992px)">
+                                        <source srcset="./assets/images/fFinder2.png" media="(min-width: 768px)">
+                                        <img class="img-fluid" src="./assets/images/fFinder3.png" alt="Friend Finder">
+                                    </picture>
+                                    <figcaption class="portfolio__title py-2 h5 m-0 position-relative font-weight-normal text-white text-center">Friend Finder</figcaption>
+                                </figure><!-- portfolio__item -->
+                            </a><!-- portfolio__link -->
+                            <a class="portfolio__link col-md-auto mb-4 mb-sm-5" title="Click to learn more"  target ="blank" href="https://github.com/chernojallow/TriviaGame">
+                                <figure class="portfolio__item">
+                                    <picture class="portfolio__image">
+                                        <source srcset="./assets/images/trivia.png" media="(min-width: 992px)">
+                                        <source srcset="./assets/images/trivia2.png" media="(min-width: 768px)">
+                                        <img class="img-fluid" src="./assets/images/trivia3.png" alt="Friend Finder">
+                                    </picture>
+                                    <figcaption class="portfolio__title py-2 h5 m-0 position-relative font-weight-normal text-white text-center">Trivia Game</figcaption>
+                                </figure><!-- portfolio__item -->
+                            </a><!-- portfolio__link -->
+                            <a class="portfolio__link col-md-auto mb-4 mb-sm-5" title="Click to learn more" target ="blank" href="https://github.com/chernojallow/gifTastic">
+                                <figure class="portfolio__item">
+                                    <picture class="portfolio__image">
+                                        <source srcset="./assets/images/gif.png" media="(min-width: 992px)">
+                                        <source srcset="./assets/images/gif2.png" media="(min-width: 768px)">
+                                        <img class="img-fluid" src="./assets/images/gif3.png" alt="Giftastic">
+                                    </picture>
+                                    <figcaption class="portfolio__title py-2 h5 m-0 position-relative font-weight-normal text-white text-center">Giftastic</figcaption>
+                                </figure><!-- portfolio__item -->
+                            </a><!-- portfolio__link -->
+                            <a class="portfolio__link col-md-auto mb-4 mb-sm-5" title="Click to learn more"  target ="blank" href="https://github.com/chernojallow/scrape">
+                                <figure class="portfolio__item">
+                                    <picture class="portfolio__image">
+                                        <source srcset="./assets/images/scrape1.png" media="(min-width: 992px)">
+                                        <source srcset="./assets/images/scrape2.png" media="(min-width: 768px)">
+                                        <img class="img-fluid" src="./assets/images/scrape3.png" alt="Scrape">
+                                    </picture>
+                                    <figcaption class="portfolio__title py-2 h5 m-0 position-relative font-weight-normal text-white text-center"> News Fit to Scrape</figcaption>
+                                </figure><!-- portfolio__item -->
+                            </a><!-- portfolio__link -->
+                            <a class="portfolio__link col-md-auto mb-4 mb-sm-5" title="Click to learn more"  target ="blank" href="https://github.com/shelbydix7/Project2">
+                                <figure class="portfolio__item">
+                                    <picture class="portfolio__image">
+                                        <source srcset="./assets/images/dating.jpeg" media="(min-width: 992px)">
+                                        <source srcset="./assets/images/dating2.jpeg" media="(min-width: 768px)">
+                                        <img class="img-fluid" src="./assets/images/dating3.jpeg" alt="Dating App">
+                                    </picture>
+                                    <figcaption class="portfolio__title py-2 h5 m-0 position-relative font-weight-normal text-white text-center">Dating Application</figcaption>
+                                </figure><!-- portfolio__item -->
+                            </a><!-- portfolio__link -->
+                            <a class="portfolio__link col-md-auto mb-4 mb-sm-5" title="Click to learn more" target ="blank" href="https://github.com/chernojallow/project-3">
+                                <figure class="portfolio__item">
+                                    <picture class="portfolio__image">
+                                        <source srcset="./assets/images/nursing1.png" media="(min-width: 992px)">
+                                        <source srcset="./assets/images/nursing2.png" media="(min-width: 768px)">
+                                        <img class="img-fluid" src="./assets/images/nursing3.png" alt="News Fit to Scrape">
+                                    </picture>
+                                    <figcaption class="portfolio__title py-2 h5 m-0 position-relative font-weight-normal text-white text-center">Nursing Clinicals App</figcaption>
+                                </figure><!-- portfolio__item -->
+                            </a><!-- portfolio__link -->
+                        </section><!-- .portfolio -->
+                    </article><!-- .article -->
+                </div>
+            </div>
+        </div>
+        <footer class="footer site-footer sticky-footer mt-5 py-4">
+            <p class="site-footer__credit mx-auto text-center m-0">
+                &copy;
+                <script type="text/javascript">
+                    document.write(new Date().getFullYear());
+                </script> Cherno Jallow
+            </p>
+        </footer>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+            crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+            crossorigin="anonymous"></script>
+    </body>
 </html>

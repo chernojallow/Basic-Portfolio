@@ -11,32 +11,25 @@ body {
 	color: black;
 	margin-bottom: 5rem;
 
-
-
-	/* font-family: Arial, 'Helvetica Nueue', Helvetica, sans-serif; */
-    /* For .sticky-footer */
-   
 }
 
-
-
 .navbar {
-	background-color:#666;
+  background-color:#666;
 	font-size: 20px;
 	border-bottom: 0.2rem solid #4aaaa5;
 }
 
 .navbar-brand {
 	font-size: 30px;
-	
 }
+
+
 
 
 /* #region .site-header */
 .site-header {
   border-bottom: 1px solid #ccc;
  
-
 }
 /* #endregion .site-header */
 
@@ -63,18 +56,14 @@ body {
 		max-width: 960px;
     }
 
-   
 }
 /* #endregion .site-content */
 
 /* #region .site-main */
 .site-main {
-    border: 1px solid #ccc;
+  border: 1px solid #ccc;
 	background: url("../images/Bground.jpeg");
 }
-
-
-
 
 
 /* #endregion .site-main */
@@ -105,10 +94,6 @@ body {
 }
 
 
-
-
-
-
 /* #endregion .article */
 
 /* #region .btn */
@@ -121,7 +106,7 @@ body {
 
 .btn-success  {
 	background-color:#B8860B;
-    border-color:  black;
+  border-color:  black;
 	border-radius: 0;
 	color: black;
 	padding-bottom: 10px;
@@ -131,30 +116,10 @@ body {
 
 }
 
-a {
+a:hover {
+  /* background-color: green; */
 	color: black;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 /* #endregion .btn */
@@ -201,8 +166,6 @@ a {
 }
 
 
-
-
 .sidebar ul li {
 	display: inline-block;
 	margin: 0;
@@ -216,22 +179,13 @@ a {
 }
 
 
-
-
-
-
 .sidebar h2 {
 font-size: 1.3em;
 font-weight: bold;
-/* padding-bottom: 1em; */
 padding-bottom:1px;
 margin-bottom: 1em;
 text-align: center;
 }
-
-
-
-
 
 
 .sidebar ul li:hover {
@@ -243,12 +197,22 @@ text-align: center;
 }
 
 
-
 .portfolio__item:hover {
 	/* transform: rotate(-4deg) scale(1.1, 1.1); */
-	/* transform: scale(1.1,1.1); */
 	transform: scale(1.1,1.1);
 }
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

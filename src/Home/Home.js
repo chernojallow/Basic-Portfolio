@@ -1,9 +1,9 @@
 import React from 'react'
 import { Link } from "react-scroll";
-import welcomeStyles from './Welcome.module.scss'
+import homeStyles from './homeStyles.scss'
 import RightArrow from 'Images/right-arrow.png'
 
-class Welcome extends React.Component {
+class Home extends React.Component {
 
 	constructor(props) {
 		super(props)
@@ -11,21 +11,21 @@ class Welcome extends React.Component {
 			vh: window.innerHeight, 
 			vw: window.innerWidth
 		}
-		this.handleResize = this.handleResize.bind(this)
+		this.handleSize = this.handleSize.bind(this)
 		// We execute the same script as before
 	  document.documentElement.style.setProperty('--vh', `${this.state.vh * 0.01}px`);
 	  document.documentElement.style.setProperty('--vw', `${this.state.vw}px`);
 	}
 	
 	componentDidMount() {
-		window.addEventListener('resize', this.handleResize)
+		window.addEventListener('size', this.handleSize)
 	}
 
 	componentWillUnmount() {
-   	window.removeEventListener('resize', this.handleResize)
+   	window.removeEventListener('size', this.handleSize)
 	}
 
-	handleResize(){
+	handleSize(){
 		// We execute the same script as before
 			if(this.state.vw !== window.innerWidth){
 				console.log(window.innerWidth)
@@ -38,14 +38,14 @@ class Welcome extends React.Component {
 
 	render() {
 		return (
-			<div id={this.props.id} className={welcomeStyles.container}>
+			<div id={this.props.id} className={homeStyles.container}>
 				<div className={welcomeStyles.wrapper}>
-					<h1 className={`${welcomeStyles.csstyping} ${welcomeStyles.csstyping1}`}>HELLO. </h1> 
-					<h1 className={`${welcomeStyles.csstyping} ${welcomeStyles.csstyping2}`}> I'M CHERNO JALLOW.</h1>
-					<h1 className={`${welcomeStyles.csstyping} ${welcomeStyles.csstyping3}`}> FULL STACK DEVELOPER. </h1>	
-					<div className={welcomeStyles.buttonWrapper}>
-					<div className={welcomeStyles.button}>
-					 <Link className={welcomeStyles.link} to="aboutSection" spy={true} smooth={true}offset={0} duration= {500}>
+					<h1 className={`${homeStyles.typing} ${homeStyles.typing1}`}>HELLO. </h1> 
+					<h1 className={`${homeStyles.typing} ${homeStyles.typing2}`}> I'M CHERNO JALLOW.</h1>
+					<h1 className={`${homeStyles.typing} ${homeStyles.typing3}`}> I'M A FULL STACK DEVELOPER. </h1>	
+					<div className={homeStyles.buttonWrapper}>
+					<div className={homeStyles.button}>
+					 <Link className={homeStyles.link} to="aboutSection" spy={true} smooth={true}offset={0} duration= {500}>
 						Learn more 
 						<img src={RightArrow} alt="Direction arrow"/>
 					 </Link>
@@ -54,12 +54,11 @@ class Welcome extends React.Component {
 
 				</div>
 				</div>
-				
-				
+						
 			</div>
 		)
 	}
 	
 }
 
-export default Welcome
+export default Home

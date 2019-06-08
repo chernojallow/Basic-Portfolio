@@ -1,0 +1,60 @@
+.skillBar {
+	display: flex;
+	flex-direction: row;
+	margin: 0 auto;
+	width: 100%;
+	margin: 20px 0px;
+	overflow: hidden;
+	box-shadow: 1px 1px 10px var(--color-2);
+
+	@media screen and (max-width: 500px){
+		margin: 10px 0px;
+	}
+	
+}
+
+.fillBar {
+	border: 3px solid var(--color-2);
+	display: flex;
+	flex-direction: row;
+	flex-grow: 10;
+	overflow: hidden;
+}
+
+.name {
+	text-align: center;
+	border: 3px solid var(--color-2);
+	border-right: none;
+	padding: 5px;
+	padding-top: 5px;
+	width: 80px;
+	font-family: var(--header-font);
+	padding-top: 8px;
+	font-size: 0.8em;
+
+	@media screen and (max-width: 500px){
+		width: 70px;
+		font-size: 0.6em;
+	}
+}
+
+.value {
+	padding: 5px;
+	background-color: var(--color-1);
+	border-right: none;
+	overflow: hidden;
+	border-radius: 0px 15px 15px 0px; 
+	box-shadow: 2px 1px 15px var(--color-1);
+}
+
+.remainder {
+	text-align: right;
+	padding: 5px;
+	border-left: none;
+	font-family: var(--header-font);
+	padding-top: 8px;
+	font-size: 0.8em;
+	@media screen and (max-width: 500px){
+		font-size: 0.7em;
+	}
+}

@@ -1,7 +1,7 @@
 import React from 'react'
 import Home from './Components/Home/Home.js'
-// import About from './Components/About/About.js'
-// import Portfolio from './Components/Portfolio/Portfolio.js'
+import About from './Components/About/About.js'
+import Portfolio from './Components/Portfolio/Portfolio.js'
 import Contact from './Components/Contact/Contact.js'
 import AppStyles from './App.style.scss';
 
@@ -44,8 +44,8 @@ class App extends React.Component {
 		return (
 	    <div className={AppStyles.app}>
 	      <Home id='homeSection'/>
-	      {/* <About id='aboutSection' fixed={this.state.fixed}/> */}
-	      {/* <Portfolio id='portfolioSection' fixed={this.state.fixed}/> */}
+	      <About id='aboutSection' fixed={this.state.fixed}/>
+	      <Portfolio id='portfolioSection' fixed={this.state.fixed}/>
 	      <Contact id='contactSection' />
 
 	    </div>

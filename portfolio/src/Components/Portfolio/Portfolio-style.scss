@@ -1,0 +1,150 @@
+.container {
+	position: relative;
+	z-index: 10;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	background-color: var(--secondary-background-color);
+	color: white;
+	padding: 100px 10%;
+	border-top: 1px dotted var(--color-2);
+
+	@media screen and (max-width: 1400px){
+		padding: 100px 10%;
+	}
+	@media screen and (max-width: 1000px){
+		padding: 100px 5%;
+	}
+	@media screen and (max-width: 750px){
+		padding: 100px 10px;
+	}
+
+	@media screen and (max-width: 500px){
+		padding: 50px 0px;
+		padding-top: 50px !important;
+	}
+}
+
+.filterSection {
+	display: flex;
+	flex-direction: row;
+	white-space: nowrap;
+	text-align: center;
+	padding-top: 60px;
+
+	@media screen and (max-width: 650px){
+		flex-wrap: wrap;
+		justify-content: center;
+		width: 100%;
+	}
+}
+
+.selector {
+	font-size: 1.4em;
+	padding: 3px 40px;
+	cursor: pointer;
+	margin: 0px 20px ;
+	font-family: var(--header-font);
+	-webkit-tap-highlight-color:  rgba(255, 255, 255, 0); 
+	
+	@media screen and (max-width: 1200px){
+		padding: 3px 15px;
+		margin: 3px 15px;
+	}
+	@media screen and (max-width: 1000px){
+		font-size: 1.1em;
+		padding: 3px 10px;
+		margin: 6px 10px;
+	}
+
+
+	animation: fadeOutOpacity .5s ease-in;
+
+}
+
+@keyframes fadeOutOpacity {
+	0% {
+		background-color: var(--color-2);
+	}
+	100% {
+		background-color: transparent;
+	}
+}
+
+.selector:hover {
+	color: var(--color-1);
+	text-shadow: 1px 1px 15px var(--color-2);
+}
+
+.selectorActive {
+	background-color: none;
+	-webkit-tap-highlight-color:  rgba(255, 255, 255, 0); 
+	animation: fadeInOpacity 0.5s ease-in forwards;
+	box-shadow: 1px 1px 10px var(--color-1);
+}
+
+@keyframes fadeInOpacity {
+	0% {
+		background-color: none;
+	}
+	100% {
+		background-color: var(--color-2);
+	}
+}
+
+.projects {
+	max-width: 1200px;
+	margin-top: 20px;
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+.background {
+
+	height: 100%;
+	padding-top: 1px;
+	background-image: var(--gradient);
+	background-size: 400% 400%;
+	-webkit-animation: Gradient 10s ease infinite;
+  -moz-animation: Gradient 10s ease infinite;
+  animation: Gradient 10s ease infinite;
+}
+
+
+@-webkit-keyframes Gradient {
+  0% {
+    background-position: 0% 50%
+  }
+  50% {
+    background-position: 100% 50%
+  }
+  100% {
+    background-position: 0% 50%
+  }
+}
+
+@-moz-keyframes Gradient {
+  0% {
+    background-position: 0% 50%
+  }
+  50% {
+    background-position: 100% 50%
+  }
+  100% {
+    background-position: 0% 50%
+  }
+}
+
+@keyframes Gradient {
+  0% {
+    background-position: 0% 50%
+  }
+  50% {
+    background-position: 100% 50%
+  }
+  100% {
+    background-position: 0% 50%
+  }
+}

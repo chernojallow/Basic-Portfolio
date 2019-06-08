@@ -1,0 +1,466 @@
+
+
+.projectTile {
+	width: 400px;
+	max-width: 400px;
+	height: 300px;
+	display: flex;
+  align-items: center;
+  justify-content: center;
+	overflow: hidden;
+	position: relative;
+	box-shadow: 1px 1px 10px rgba(0,0,0, 0.35);
+	animation: fadeIn 0.6s;
+	-webkit-animation: fadeIn 0.6s;
+	font-family: var(--header-font);
+	font-size: 0.8em;
+
+	@media screen and (max-width: 1525px){
+		width: 300px;
+		max-width: 300px;
+		height: 255px;
+	}
+	@media screen and (max-width: 600px){
+		$width: calc(100vw / 2 - 15px);
+		width: $width;
+		max-width: $width;
+		height: calc(#{$width} / 4 * 3);
+		font-size: 0.7em;
+	}
+	
+	
+	@media screen and (max-width: 400px){
+		$width: calc(100vw - 15px);
+		width: $width;
+		max-width: $width;
+		height: calc(#{$width} / 4 * 3);
+	}
+	img {
+		height: 100%;	
+	}
+}
+
+.animateRemove {
+	display: flex;
+	width: 400px;
+	max-width: 400px;
+	height: 342px;
+  align-items: center;
+  justify-content: center;
+	overflow: hidden;
+	position: relative;
+
+	animation: fadeOut 0.6s forwards;
+	-webkit-animation: fadeOut 0.6s forwards;
+
+	@media screen and (max-width: 1525px){
+		width: 300px;
+		max-width: 300px;
+		height: 255px;
+	}
+	@media screen and (max-width: 1000px){
+		width: 300px;
+		max-width: 300px;
+		height: 255px;
+	}
+	@media screen and (max-width: 650px){
+		width: 200px;
+		max-width: 200px;
+		height: 170px;
+	}
+	@media screen and (max-width: 500px){
+		$width: 100vw;
+		width: $width;
+		max-width: $width;
+		height: calc(#{$width} / 4 * 3);
+	}
+	img {
+		height: 100%;	
+	}
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.01);
+    width: 0px;
+    flex-grow: 0.0001;
+  }
+  1% {
+    opacity: 0;
+    transform: scale(0.01);
+    width: 400px;
+    flex-grow: 1;
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+    width: 400px;
+    flex-grow: 1;
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.01);
+    width: 0px;
+    flex-grow: 0.0001;
+  }
+  50% {
+    opacity: 0;
+    transform: scale(0.01);
+    width: 400px;
+    flex-grow: 1;
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+    width: 400px;
+    flex-grow: 1;
+  }
+}
+
+@keyframes fadeOut {
+   0% {
+    opacity: 1;
+    transform: scale(1);
+    width: 400px;
+    flex-grow: 1;
+  }
+  50% {
+	 	opacity: 0;
+    transform: scale(0.01);
+    width: 400px;
+    flex-grow: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: scale(0.01);
+    width: 0px;
+    flex-grow: 0.0001;
+  }
+}
+
+@-webkit-keyframes fadeOut {
+  0% {
+    opacity: 1;
+    transform: scale(1);
+    width: 400px;
+    flex-grow: 1;
+  }
+  50% {
+	 	opacity: 0;
+    transform: scale(0.01);
+    width: 400px;
+    flex-grow: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: scale(0.01);
+    width: 0px;
+    flex-grow: 0.0001;
+  }
+}
+
+.hover {
+	background-color: var(--fourth-background-color);
+	display: flex;
+	flex-direction: column;
+	position: absolute;
+	opacity: 0;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	transition: opacity ease 0.35s;
+
+	h3 {
+		margin-top: 0px;
+		opacity: 0;
+		transition: all ease 0.35s
+	}
+	.subtitle{
+		color: var(--color-1);
+		flex-grow: 6;	
+		opacity: 0;
+		transition: all ease 0.35s;
+	}
+
+	
+}
+.button {
+		flex-grow: 2;
+		padding: 10px 20px;
+		display: inline-block;
+		margin-bottom: 0;
+		opacity: 0;
+		cursor: pointer;
+		border: 1px solid var(--color-2);
+		box-shadow: 1px 1px 15px var(--color-1);
+
+		transition: all ease 0.35s;
+		@media screen and (max-width: 600px){
+			padding: 8px 16px;
+			padding-top: 10px;
+			font-size: 1em;
+		}
+		@media screen and (max-width: 400px){
+			padding: 10px 20px;
+			padding-top: 12px;
+			font-size: 0.8em;
+		}
+	}
+.button:hover {
+	border-color: var(--color-1);
+	box-shadow: 1px 1px 15px var(--color-2);
+}	
+
+.hover:hover {
+	opacity: 1;
+	h3 {
+		margin-top: 15%;
+		opacity: 1;
+	} 
+	.button {
+		margin-bottom: 15%;
+		opacity: 1;
+	}	
+	
+	.subtitle {
+		opacity: 1;
+	}
+}
+
+.preview {
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 999;
+	height: 100%;
+	width: 100%;
+	background: white;
+	background: rgba(255,255,255,0.2); 
+	opacity: 0;
+	text-align: center;
+	transition: all 0.4s;
+	animation: fadeOpacity 0.4s;
+	transition: all 1s;
+}
+
+@keyframes fadeOpacity {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+@-webkit-keyframes fadeOpacity {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+.container {
+	z-index: 999;
+	background-color: var(--background-color);
+	position: absolute;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+	top: 0;
+	right: 0;
+ 	bottom: 0;
+  left: 0;
+	width: 800px;
+	height: 700px;
+	z-index: 999;
+	box-shadow: 0px 0px 5px 5px rgba(0,0,0,0.2);
+	animation: fadeInPreview 0.4s forwards;
+	-webkit-animation: fadeInPreview 0.4s forwards;
+
+	.img {
+		position: relative;
+		height: 60%;
+		max-height: 60%;
+		min-height: 30%;
+		width: 100%;
+		overflow: hidden;
+		border-bottom: 2px solid var(--color-1);
+		@media screen and (min-height: 615px){
+			height: 370px;
+			max-height: 370px;
+		}
+		div {
+			height: 100%;
+		}
+		img {
+			display: block;
+			margin: auto;
+			height: 100%;
+			width: auto;
+			max-width: 100%;
+			object-fit: cover;
+		}
+
+
+	}
+
+	@media screen and (max-height: 700px){
+		height: calc(100% - 62px);
+		margin-top: 0;
+	}
+	@media screen and (max-width: 800px){
+		width: 100%;
+	}
+}
+
+.fadeInPreview {
+
+	animation: fadeInPreview 0.4s forwards;
+	-webkit-animation: fadeInPreview 0.4s forwards;
+}
+
+.fadeOutPreview {
+
+	animation: fadeOutPreview 0.4s forwards;
+	-webkit-animation: fadeOutPreview 0.4s forwards;
+}
+
+@keyframes fadeInPreview {
+	0% {
+		opacity: 0;
+		transform: scale(0.35);
+	}
+	100% {
+		opacity: 1;
+		transform: scale(1);
+	}
+}
+
+@-webkit-keyframes fadeInPreview {
+	0% {
+		opacity: 0;
+		transform: scale(0.35);
+	}
+	100% {
+		opacity: 1;
+		transform: scale(1);
+	}
+}
+
+@keyframes fadeOutPreview {
+	0% {
+		opacity: 1;
+		transform: scale(1);
+	}
+	100% {
+		opacity: 0;
+		transform: scale(0.35);
+	}
+}
+
+@-webkit-keyframes fadeOutPreview {
+	0% {
+		opacity: 1;
+		transform: scale(1);
+	}
+	100% {
+		opacity: 0;
+		transform: scale(0.35);
+	}
+}
+
+.details {
+	text-align: left;
+	padding-left: 40px;
+	padding-right: 40px;
+	font-family: var(--main-font);
+
+
+	h1 {
+		position: relative;
+		margin-bottom: 0px;
+		@media screen and (max-width: 500px){
+			font-size: 1.3em;
+		}
+		font-family: var(--header-font);
+	}
+	h3 {
+		position: relative;
+		width: 100%;
+		margin-top: 5px;
+		padding-bottom: 10px;
+		color: #aaa;
+		border-bottom: 0.5px solid #aaa;
+		font-family: var(--header-font);
+		@media screen and (max-width: 500px){
+			font-size: 1.2em;
+		}
+	}
+	p {
+		margin-bottom: 80px;
+		@media screen and (max-width: 500px){
+			font-size: 1.1em;
+		}
+	}
+
+	.links {
+		margin-top: 20px;
+		position: absolute;
+		bottom: 0;
+		margin-bottom: 20px;
+			a {
+				display: inline-block;
+				text-decoration: none;
+				color: white;
+				margin-right: 10px;
+				background-color: var(--color-2);
+				padding: 6px 6px 4px 10px;
+				transition: all 0.6s ease;
+				box-shadow: 1px 1px 15px var(--color-1);
+				@media screen and (max-width: 500px){
+					font-size: 1.1em;
+				}
+			}
+			img {
+				margin-left: 10px;
+				display: inline-block;
+				vertical-align: middle;
+				@media screen and (max-width: 500px){
+					height: 16px;
+					width: 16px;
+				}
+			}
+
+			a:hover {
+				background-color: var(--color-1);
+				box-shadow: 1px 1px 15px var(--color-2);
+			}
+
+			span {
+				float: right;
+				cursor: pointer;
+				transition: all 0.6s ease;
+				background-color: var(--color-2);
+				padding: 5px 5px;
+				box-shadow: 1px 1px 15px var(--color-1);
+				img {
+					margin: 0 auto;
+					@media screen and (max-width: 500px){
+						height: 16px;
+						width: 16px;
+					}
+				}
+			}
+			span:hover {
+				background-color: var(--color-1);
+				box-shadow: 1px 1px 15px var(--color-2);
+			}
+		
+	}
+}

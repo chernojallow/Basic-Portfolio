@@ -1,0 +1,73 @@
+.container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	background-color: var(--background-color);
+	color: white;
+	padding: 100px 20%;
+	height: 100%;
+	min-height: 100%;
+	
+	@media screen and (max-width: 1600px){
+		padding: 100px 10%;
+	}
+	@media screen and (max-width: 1000px){
+		padding: 100px 5%;
+	}
+	@media screen and (max-width: 750px){
+		padding: 100px 10px;
+		padding-bottom: 50px;
+	}
+}
+
+.traits {
+	margin-top: 100px;
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+	text-align: center;
+
+	@media screen and (max-width: 500px){
+		margin-top: 50px;
+	}
+
+
+
+
+	@media screen and (max-width: 1000px){
+		flex-wrap: wrap; 
+		div {
+			margin-top: 30px;
+			max-width: 250px;
+		}
+	}
+}
+
+.info{
+	display: flex;
+	flex-direction: row;
+	margin-top: 70px;
+	width: 100%;
+
+	@media screen and (max-width: 700px){
+		flex-direction: column;
+	}
+}
+
+.personal {
+	width: 50%;
+	@media screen and (max-width: 700px){
+		width: 100%;
+	}
+}
+
+.skills {
+
+	width: 50%;
+	@media screen and (max-width: 700px){
+		align-items: center;
+		width: 100%;
+	}
+}

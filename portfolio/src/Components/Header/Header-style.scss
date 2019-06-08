@@ -1,0 +1,22 @@
+.header {
+	width: 100%;
+	text-align: center;
+	h1 {
+		font-family: var(--header-font);
+		animation-fill-mode: backwards !important;
+		font-size: 2.5em;
+		margin-bottom: 0px;
+		color: var(--color-1);
+		text-shadow: 1px 1px 15px var(--color-2);
+	}
+}
+
+.imgDiv {
+	animation-fill-mode: backwards !important;
+	margin-bottom: -15px;
+	width: 100%;
+	img {
+		height: 100%;
+		width: auto;
+	}
+}

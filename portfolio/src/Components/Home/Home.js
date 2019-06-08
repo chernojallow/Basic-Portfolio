@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from "react-scroll";
-import homeStyles from './homeStyles.scss'
-import RightArrow from 'Images/right-arrow.png'
+import homeStyles from './Home-style.scss'
+// import RightArrow from 'Images/right-arrow.png'
 
 class Home extends React.Component {
 
@@ -39,7 +39,7 @@ class Home extends React.Component {
 	render() {
 		return (
 			<div id={this.props.id} className={homeStyles.container}>
-				<div className={welcomeStyles.wrapper}>
+				<div className={homeStyles.wrapper}>
 					<h1 className={`${homeStyles.typing} ${homeStyles.typing1}`}>HELLO. </h1> 
 					<h1 className={`${homeStyles.typing} ${homeStyles.typing2}`}> I'M CHERNO JALLOW.</h1>
 					<h1 className={`${homeStyles.typing} ${homeStyles.typing3}`}> I'M A FULL STACK DEVELOPER. </h1>	
@@ -47,7 +47,7 @@ class Home extends React.Component {
 					<div className={homeStyles.button}>
 					 <Link className={homeStyles.link} to="aboutSection" spy={true} smooth={true}offset={0} duration= {500}>
 						Learn more 
-						<img src={RightArrow} alt="Direction arrow"/>
+						{/* <img src={RightArrow} alt="Direction arrow"/> */}
 					 </Link>
 						
 					</div>

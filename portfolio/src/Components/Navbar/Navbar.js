@@ -3,6 +3,7 @@ import navbarSCSS from './Navbar.module.scss'
 import { Link } from "react-scroll";
 import menuImg from 'Assets/Images/menu.png'
 
+
 class Navbar extends React.Component {
 
 	constructor(props) {
@@ -59,10 +60,10 @@ class Navbar extends React.Component {
 						
 							<div className={navbarSCSS.hiddenMenu} style={this.state.showMenu} >
 								<ul>
-									<li className={navbarSCSS.hiddenItem} style={{paddingTop: "25px"}}> <Link activeClass={navbarSCSS.active} to="homeSection" spy={true} smooth={true} offset={0} duration= {500} onClick={this.onClick}>Home</Link> </li>
-									<li className={navbarSCSS.hiddenItem}> <Link activeClass={navbarSCSS.active} to="aboutSection" spy={true} smooth={true} offset={this.props.fixed ? 0 : -180} duration= {500} onClick={this.onClick}>About</Link> </li>
-									<li className={navbarSCSS.hiddenItem}> <Link activeClass={navbarSCSS.active} to="portfolioSection" spy={true} smooth={true} offset={this.props.fixed ? 0 : -180} duration= {500} onClick={this.onClick}>Portfolio</Link> </li>
-									<li className={navbarSCSS.hiddenItem} style={{paddingBottom: "25px"}}> <Link activeClass={navbarSCSS.active} to="contactSection" spy={true} smooth={true} offset={this.props.fixed ? 0 : -180} duration= {500} onClick={this.onClick}>Contact</Link> </li>
+									<li className={navbarSCSS.hiddenItem} style={{paddingTop: "25px"}}> <Link activeClass={navbarSCSS.active} to="homePage" spy={true} smooth={true} offset={0} duration= {500} onClick={this.onClick}>Home</Link> </li>
+									<li className={navbarSCSS.hiddenItem}> <Link activeClass={navbarSCSS.active} to="aboutPage" spy={true} smooth={true} offset={this.props.fixed ? 0 : -180} duration= {500} onClick={this.onClick}>About</Link> </li>
+									<li className={navbarSCSS.hiddenItem}> <Link activeClass={navbarSCSS.active} to="portfolioPage" spy={true} smooth={true} offset={this.props.fixed ? 0 : -180} duration= {500} onClick={this.onClick}>Portfolio</Link> </li>
+									<li className={navbarSCSS.hiddenItem} style={{paddingBottom: "25px"}}> <Link activeClass={navbarSCSS.active} to="contactPage" spy={true} smooth={true} offset={this.props.fixed ? 0 : -180} duration= {500} onClick={this.onClick}>Contact</Link> </li>
 									
 								</ul>
 							</div>	
@@ -74,6 +75,12 @@ class Navbar extends React.Component {
 							<li className={navbarSCSS.navItem}> <Link activeClass={navbarSCSS.active} to="aboutPage" spy={true} smooth={true} offset={1} duration= {500}>About</Link> </li>
 							<li className={navbarSCSS.navItem}> <Link activeClass={navbarSCSS.active} to="portfolioPage" spy={true} smooth={true} offset={1}  duration= {500}>Portfolio</Link> </li>
 							<li className={navbarSCSS.navItem}> <Link activeClass={navbarSCSS.active} to="contactPage" spy={true} smooth={true} offset={1} duration= {500}>Contact</Link> </li>
+
+
+
+
+
+
 						</ul>
 					</nav>
 			}
@@ -83,3 +90,5 @@ class Navbar extends React.Component {
 }
 
 export default Navbar
+
+

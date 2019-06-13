@@ -22,10 +22,10 @@ const About = (props) => {
 
 			<div className={aboutStyles.traits}>
 				<InfoSection img={challenge} alt='Problem solving icon' header='Challenge' content=
-				"Challenges make me stronger, and I do well while working with others or independently"/>
+				"Challenges make me stronger, and I do well while working with others or independently."/>
 
 				<InfoSection img={responsive} alt='Fast, responsive software icon' header='Responsive' content=
-				"Good at creating apps that are user-friendly like mobile responsiveness"/>
+				"Good at creating apps that are user-friendly like mobile responsiveness."/>
 
 				<InfoSection img={deadline} alt='Deadline icon' header='Deadline' content=
 				"I pride myself at meeting deadline while quality is produced."/>

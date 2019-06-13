@@ -1,8 +1,8 @@
 import React from 'react'
-import skillStyles from './MySkills-style.scss'
+import skillStyles from './MySkills.module.scss'
 import Fade from 'react-reveal/Fade'
 
-const SkillBar = (props) => {
+const MySkills = (props) => {
 	return (
 		<div className={skillStyles.skillBar}>
 			<div className={skillStyles.name}>
@@ -23,4 +23,4 @@ const SkillBar = (props) => {
 	)
 }
 
-export default SkillBar
+export default MySkills

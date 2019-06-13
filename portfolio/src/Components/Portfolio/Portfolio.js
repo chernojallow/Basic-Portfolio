@@ -1,11 +1,11 @@
 import React from 'react'
 import Header from 'Components/Header/Header.js'
-import Project from './PortfolioComponent/PortfolioComponent.js'
+import Project from './MyPortfolio/MyPortfolio.js'
 import Fade from 'react-reveal/Fade';
 
-import portfolioStyles from './Portfolio-style.scss'
+import portfolioStyles from './Portfolio.module.scss'
 
-const portfolioComponent = require('./PortfolioComponent.js')
+const projects = require('./Projects.js')
 
 class Portfolio extends React.Component {
 
@@ -50,6 +50,7 @@ class Portfolio extends React.Component {
 					<div className={portfolioStyles.filterSection} delay={1000}>
 						<div id="ALL" className={`${portfolioStyles.selector} ${this.state.JAVASCRIPT ? portfolioStyles.selectorActive : null}`} onClick={this.onClick}>Javascript</div>
 						<div id="Node.js + Javascript + MYSQL + Express" className={`${portfolioStyles.selector} ${this.state.NODE ? portfolioStyles.selectorActive : null}`}  onClick={this.onClick}>Node.js</div>
+						{/* <div id="React.js + Node.js + MongoDB + Express" className={`${portfolioStyles.selector} ${this.state.PYTHON ? portfolioStyles.selectorActive : null}`}  onClick={this.onClick}>React.js + MongoDB</div> */}
 						<div id="React.js + Node.js + MongoDB + Express" className={`${portfolioStyles.selector} ${this.state['REACT. JS + MongoDB'] ? portfolioStyles.selectorActive : null}`}  onClick={this.onClick}>React.js + MongoDB </div>
 						 <div id="Javascript + MYSQL + Node.js" className={`${portfolioStyles.selector} ${this.state.MYSQL ? portfolioStyles.selectorActive : null}`}  onClick={this.onClick}>MYSQL </div> 
 						<div id="Javascript + jQuery" className={`${portfolioStyles.selector} ${this.state.jQUERY ? portfolioStyles.selectorActive : null}`}  onClick={this.onClick}>jQuery</div>
@@ -60,8 +61,8 @@ class Portfolio extends React.Component {
 					<div className={portfolioStyles.projects}>
 						{
 							
-							Object.keys(portfolioComponent.projects).map((project) => 
-								<Project project={portfolioComponent.projects[project]} fixed={this.props.fixed} show={this.state.active} transition={this.state.transition}/>								
+							Object.keys(projects.projects).map((project) => 
+								<Project project={projects.projects[project]} fixed={this.props.fixed} show={this.state.active} transition={this.state.transition}/>								
 							)
 
 						}

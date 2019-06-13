@@ -23,7 +23,7 @@ export const projects = {
 		github: "https://github.com/chernojallow/scrape",
 	    images: ["web-scraping.jpg"]
 	},
-	FriendFinder: {
+	friendFinder: {
 		name: "Friend Finder",
 		language: "Node.js + Express",
 		description: "This application will take in results from your users' surveys, then compare their answers with those from other users. The app will then display the name and picture of the user with best overall match.",
@@ -31,7 +31,7 @@ export const projects = {
 		github: "https://github.com/chernojallow/FriendFinder",
 		images: ["fFinder3.png"]
 	},
-	bamazonCustomer: {
+	BamazonCustomer: {
 		name: "Bamazon",
 		language: "Javascript + MYSQL + Node.js",
 		description: "The application will take in orders from customers and deplete stock from the store's inventory. Customers can view the current items available for purchase. They can prompted to enter the item id# and how many products they want to purchase. If the products are in stock, order can be completed and they will see the total cost of their orders.",
@@ -43,7 +43,7 @@ export const projects = {
 		name: "Cystal Collector Game",
 		language: "Javascript + jQuery",
 		description: "To play this Crystal Collector Game, users has to click different crystal that are randomly assigned. A random number will given at the start of the game. Users win a game by matching the random number given, and they loss if they fail to match the random number.",
-		link: "https://get-yo-face.herokuapp.com/",
+		link: "",
 		github: "https://github.com/chernojallow/unit-4-game",
 		images: ["crystalscreen3.png"]
 	}

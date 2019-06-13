@@ -3,10 +3,12 @@ import Home from './Components/Home/Home.js'
 import About from './Components/About/About.js'
 import Portfolio from './Components/Portfolio/Portfolio.js'
 import Contact from './Components/Contact/Contact.js'
-import Navbar from  './Components/Navbar/Navbar.js'
-import Footer from "./Components/Footer/Footer.js"
-import AppStyles from './App.style.scss';
+import Navbar from './Components/Navbar/Navbar.js'
+import Footer from './Components/Footer/Footer.js'
+import appStyles from './App.module.scss';
+import Particles from 'react-particles-js'
 
+import { particles} from './Particles.js'
 
 class App extends React.Component {
 
@@ -15,22 +17,22 @@ class App extends React.Component {
 	  this.state = {
 	  	fixed: false
     }
-	  this.updateWindowDimensions = this.updateWindowDimensions.bind(this)
+	  this.windowDimensions = this.windowDimensions.bind(this)
 	  this.handleScroll = this.handleScroll.bind(this)
 	}
 
 	componentDidMount() {
-	  this.updateWindowDimensions()
-	  window.addEventListener('size', this.updateWindowDimensions)
+	  this.windowDimensions()
+	  window.addEventListener('resize', this.windowDimensions)
 	  window.addEventListener('scroll', this.handleScroll)
 	}
 
 	componentWillUnmount() {
-	  window.removeEventListener('size', this.updateWindowDimensions)
+	  window.removeEventListener('resize', this.windowDimensions)
 	  window.removeEventListener('scroll', this.handleScroll)
 	}
 
-	updateWindowDimensions() {
+	windowDimensions() {
 	  this.setState({height: window.innerHeight})
 	}
 
@@ -44,14 +46,16 @@ class App extends React.Component {
 
 	render() {
 		return (
-	    <div className={AppStyles.app}>
-	      <Home id='homeSection'/>
-				<Navbar fixed={this.state.fixed}/>
-	      <About id='aboutSection' fixed={this.state.fixed}/>
-	      <Portfolio id='portfolioSection' fixed={this.state.fixed}/>
-	      <Contact id='contactSection' />
-				<Footer/>
-
+	    <div className={appStyles.app}>
+	    	{/* We Load particles,view file particleOptions.js for config*/}
+	      <Particles className={appStyles.particles}
+	        params={particles}/>
+	      <Home id='homePage'/>
+	      <Navbar fixed={this.state.fixed}/>
+	      <About id='aboutPage' fixed={this.state.fixed}/>
+	      <Portfolio id='portfolioPage' fixed={this.state.fixed}/>
+	      <Contact id='contactPage' />
+				<Footer />
 	    </div>
 	  )
 	}

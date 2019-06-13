@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from "react-scroll";
-import homeStyles from './Home-style.scss'
-// import RightArrow from 'Images/right-arrow.png'
+import homeStyles from './Home.module.scss'
+import RightArrow from 'Assets/Images/right-arrow.png'
 
 class Home extends React.Component {
 
@@ -11,21 +11,21 @@ class Home extends React.Component {
 			vh: window.innerHeight, 
 			vw: window.innerWidth
 		}
-		this.handleSize = this.handleSize.bind(this)
+		this.handleResize = this.handleResize.bind(this)
 		// We execute the same script as before
 	  document.documentElement.style.setProperty('--vh', `${this.state.vh * 0.01}px`);
 	  document.documentElement.style.setProperty('--vw', `${this.state.vw}px`);
 	}
 	
 	componentDidMount() {
-		window.addEventListener('size', this.handleSize)
+		window.addEventListener('resize', this.handleResize)
 	}
 
 	componentWillUnmount() {
-   	window.removeEventListener('size', this.handleSize)
+   	window.removeEventListener('resize', this.handleResize)
 	}
 
-	handleSize(){
+	handleResize(){
 		// We execute the same script as before
 			if(this.state.vw !== window.innerWidth){
 				console.log(window.innerWidth)
@@ -40,21 +40,22 @@ class Home extends React.Component {
 		return (
 			<div id={this.props.id} className={homeStyles.container}>
 				<div className={homeStyles.wrapper}>
-					<h1 className={`${homeStyles.typing} ${homeStyles.typing1}`}>HELLO. </h1> 
-					<h1 className={`${homeStyles.typing} ${homeStyles.typing2}`}> I'M CHERNO JALLOW.</h1>
-					<h1 className={`${homeStyles.typing} ${homeStyles.typing3}`}> I'M A FULL STACK DEVELOPER. </h1>	
+					<h1 className={`${homeStyles.csstyping} ${homeStyles.csstyping1}`}>Hello. </h1> 
+					<h1 className={`${homeStyles.csstyping} ${homeStyles.csstyping2}`}> I'm Cherno Jallow.</h1>
+					<h1 className={`${homeStyles.csstyping} ${homeStyles.csstyping3}`}> I'm a Full Stack Developer. </h1>	
 					<div className={homeStyles.buttonWrapper}>
 					<div className={homeStyles.button}>
-					 <Link className={homeStyles.link} to="aboutSection" spy={true} smooth={true}offset={0} duration= {500}>
+					 <Link className={homeStyles.link} to="aboutPage" spy={true} smooth={true}offset={0} duration= {500}>
 						Learn more 
-						{/* <img src={RightArrow} alt="Direction arrow"/> */}
+						<img src={RightArrow} alt="Direction arrow"/>
 					 </Link>
 						
 					</div>
 
 				</div>
 				</div>
-						
+				
+				
 			</div>
 		)
 	}

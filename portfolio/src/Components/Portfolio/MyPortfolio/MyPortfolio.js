@@ -1,15 +1,16 @@
+
 import React from 'react' 
 import { Slide } from 'react-slideshow-image'
 
-import githubIcon from 'Assets/Images/github.jpg'
-import herokuIcon from 'Assets/Images/heroku.jpeg'
-import exitIcon from 'Assets/Images/close.png'
+import githubIcon from 'Assets/Images/github.png'
+import siteIcon from 'Assets/Images/site.png'
+import closeIcon from 'Assets/Images/close.png'
 
-import portfolioStyles from './PortfolioComponent-style.scss'
+import projectStyles from './MyPortfolio.module.scss'
 
 const images = require.context('../../../Assets/Images', true)
 
-class PortfolioComponent extends React.Component {
+class MyPortfolio extends React.Component {
 
 	constructor(props){
 		super(props)
@@ -17,18 +18,18 @@ class PortfolioComponent extends React.Component {
 			showTile: {
 				opacity: 0
 			},
-			preview: false,
+			showPreview: false,
 			dontRemove: false,
 			removed: { display: 'flex' },
 			images: []
 			
 		}
-		this.displayPreview = this.displayPreview.bind(this)
+		this.showPreview = this.showPreview.bind(this)
 		this.removePreview = this.removePreview.bind(this)
 		this.onMouseEnterChild = this.onMouseEnterChild.bind(this)
 		this.onMouseLeaveChild = this.onMouseLeaveChild.bind(this)
-		this.show = this.show.bind(this)
-		this.styles = this.styles.bind(this)
+		this.onShow = this.onShow.bind(this)
+		this.getStyles = this.getStyles.bind(this)
 	}
 
 	componentWillMount(){
@@ -53,7 +54,7 @@ class PortfolioComponent extends React.Component {
 		}
 	}
 
-	displayPreview () {
+	showPreview () {
 		this.setState({showPreview: true})
 	}
 
@@ -74,7 +75,7 @@ class PortfolioComponent extends React.Component {
  		this.setState({dontRemove: false})
  	}
 
- 	show() {
+ 	onShow() {
  		if(this.props.show.toLowerCase() === this.props.project.language.toLowerCase() || this.props.show.toLowerCase() === 'all'){
  			if(this.state.removed.display !== 'flex'){
 				this.setState({removed: {display: 'flex'}})
@@ -84,7 +85,7 @@ class PortfolioComponent extends React.Component {
  		return false
  	}
 
- 	styles(){
+ 	getStyles(){
  		const styles = {
  			marginTop: '0px',
  			opacity: 0
@@ -99,40 +100,40 @@ class PortfolioComponent extends React.Component {
 
 		return (
 
-			<div className={this.props.transition ? portfolioStyles.animateRemove : this.show() ? portfolioStyles.projectTile : portfolioStyles.animateRemove }>
+			<div className={this.props.transition ? projectStyles.animateRemove : this.onShow() ? projectStyles.projectTile : projectStyles.animateRemove }>
 				<img src={this.state.images[0]} alt="Project tile"/>
-				<div className={portfolioStyles.hover}  >
+				<div className={projectStyles.hover}  >
 					<h3>{this.props.project.name}</h3>
-					<span className={portfolioStyles.subtitle}>{this.props.project.language}</span>
-					<span ><p className={portfolioStyles.button} onClick={this.displayPreview}>LEARN MORE</p></span>
+					<span className={projectStyles.subtitle}>{this.props.project.language}</span>
+					<span ><p className={projectStyles.button} onClick={this.showPreview}>LEARN MORE</p></span>
 				</div>
 				{
 					this.state.showPreview !== false ? 
-						<div id='preview' className={portfolioStyles.preview} style={this.styles()} onClick={this.removePreview}>
-							<div className={`${portfolioStyles.container} ${this.state.showPreview !== true ? portfolioStyles.fadeOutPreview : null}`} onMouseEnter={this.onMouseEnterChild} onMouseLeave={this.onMouseLeaveChild}>
-								<div className={portfolioStyles.img}>
+						<div id='preview' className={projectStyles.preview} style={this.getStyles()} onClick={this.removePreview}>
+							<div className={`${projectStyles.container} ${this.state.showPreview !== true ? projectStyles.fadeOutPreview : null}`} onMouseEnter={this.onMouseEnterChild} onMouseLeave={this.onMouseLeaveChild}>
+								<div className={projectStyles.img}>
 									<Slide {...this.state.properties}>
 									{
 										this.state.images.map((image) => 
-											<div className={portfolioStyles.eachSlide}>
+											<div className={projectStyles.eachSlide}>
 							          <img src={image} alt="Project tile"/>
 							        </div>
 										)
 									}
 									</Slide>
 								</div>
-								<div className={portfolioStyles.details}>
+								<div className={projectStyles.details}>
 									<h1>{this.props.project.name}</h1>
 									<h3>{this.props.project.subtitle}</h3>
 									<p>{this.props.project.description}</p>
-									<div className={portfolioStyles.links}>
+									<div className={projectStyles.links}>
 										{
 											this.props.project.link !== '' ? 
-												<a href={this.props.project.link}>Heroku<img src={herokuIcon} alt="Website icon"/></a>
+												<a href={this.props.project.link}>Heroku<img src={siteIcon} alt="Website icon"/> </a>
 											: null
 										}
-										<a href={this.props.project.github}>Github <img src={githubIcon} alt="Github icon"/></a>
-										<span onClick={this.removePreview}><img id='exit' src={exitIcon} alt="Close view button"/></span>
+										<a href={this.props.project.github}>github <img src={githubIcon} alt="Github icon"/>  </a>
+										<span onClick={this.removePreview}><img id='exit' src={closeIcon} alt="Close view button"/></span>
 									</div>
 									
 								</div>
@@ -148,4 +149,4 @@ class PortfolioComponent extends React.Component {
 	
 }
 
-export default PortfolioComponent
+export default MyPortfolio

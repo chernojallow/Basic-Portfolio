@@ -1,7 +1,7 @@
 
 
 
-Website deployed to Heroku :[Cherno-website!](https://cherno-website.herokuapp.com/)
+Website deployed to Heroku :[Cherno-website!](https://chernojallow-portfolio.herokuapp.com/)
 
 
 
